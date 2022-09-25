@@ -13,4 +13,7 @@ class HomeController extends Controller
     public function contact(){
         return view('user.contact');
     }
+    public function side(){
+        return view('admin.master');
+    }
 }

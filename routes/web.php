@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 Route::get('/home',[HomeController::class,'user']);
 Route::get('/contact.html',[HomeController::class,'contact']);
+Route::get('/side',[HomeController::class,'side']);
