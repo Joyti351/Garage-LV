@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class SliderTable extends Model
 {
     use HasFactory;
+    protected $guarded='';
 }

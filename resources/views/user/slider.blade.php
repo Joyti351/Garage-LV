@@ -2,6 +2,7 @@
 @section('content')
 <div class="allcontain">
 	<div id="carousel-up" class="carousel slide" data-ride="carousel">
+
 		<div class="carousel-inner " role="listbox">
 			<div class="item active">
 				<img src="{{asset('garage/image/oldcar.jpg')}}" alt="oldcar">
@@ -28,6 +29,7 @@
 				</div>
 			</div>
 		</div>
+
 		<nav class="navbar navbar-default midle-nav">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed textcostume" data-toggle="collapse" data-target="#navbarmidle" aria-expanded="false">
