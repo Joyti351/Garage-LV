@@ -2,33 +2,20 @@
 @section('content')
 <div class="allcontain">
 	<div id="carousel-up" class="carousel slide" data-ride="carousel">
+        @foreach ($data['sliders'] as $slider)
+
 
 		<div class="carousel-inner " role="listbox">
 			<div class="item active">
-				<img src="{{asset('garage/image/oldcar.jpg')}}" alt="oldcar">
+				<img src="{{asset($slider->bg_image)}}" alt="oldcar">
 				<div class="carousel-caption">
-					<h2>Porsche 356</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur ,<br>
-						sed do eiusmod tempor incididunt ut labore </p>
+					<h2>{{ $slider->heading1 }}</h2>
+					<p>{{ $slider->description }}</p>
 				</div>
 			</div>
-			<div class="item">
-				<img src="{{asset('garage/image/porche.jpg')}}" alt="porche">
-				<div class="carousel-caption">
-					<h2>Porche</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur ,<br>
-						sed do eiusmod tempor incididunt ut labore </p>
-				</div>
-			</div>
-			<div class="item">
-				<img src="{{asset('garage/image/benz.jpg')}}" alt="benz">
-				<div class="carousel-caption">
-					<h2>Car</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur ,<br>
-						sed do eiusmod tempor incididunt ut labore </p>
-				</div>
-			</div>
+
 		</div>
+        @endforeach
 
 		<nav class="navbar navbar-default midle-nav">
 			<div class="navbar-header">

@@ -45,10 +45,10 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('banner-index')}}" class="nav-link">
+                <a href="{{url('feature-index')}}" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>
-                    banner list
+                    Feature list
                     <span class="right badge badge-danger">click here</span>
                   </p>
                 </a>
