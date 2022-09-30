@@ -30,6 +30,7 @@
                   <th>description</th>
                   <th>price</th>
                   <th>heading1</th>
+                  <th>description1</th>
                   <th>image2</th>
                   <th>heading2</th>
                   <th>description2</th>

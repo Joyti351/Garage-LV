@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\FeatureController;
+use App\Http\Controllers\LatestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +42,8 @@ Route::get('/feature-view/{id}',[FeatureController::class,'View']);
 Route::get('/feature-edit/{id}',[FeatureController::class,'edit']);
 Route::get('/feature-delete/{id}',[FeatureController::class,'delete']);
 Route::post('/feature-update',[FeatureController::class,'update']);
+
+// letest car
+Route::get('/latest-create',[LatestController::class,'create']);
+Route::post('/latest-store',[LatestController::class,'store']);
 

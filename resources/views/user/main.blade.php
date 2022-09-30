@@ -24,7 +24,7 @@
 <br>
 <br>
 <!-- ________________________Latest Cars Image Thumbnail________________-->
-	@include('user.latest')
+@include('user.latest')
 	<!-- ______________________________________________________Bottom Menu ______________________________-->
 	<div class="bottommenu">
 		<div class="bottomlogo">
