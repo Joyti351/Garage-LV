@@ -1,8 +1,11 @@
 <div class="grid">
     <div class="row">
+        @foreach ($data['latests'] as $latest)
+
+
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
             <div class="txthover">
-                <img src="{{asset('garage/image/car1.jpg')}}" alt="car1">
+                <img src="{{asset($latest->image)}}" alt="car1">
                     <div class="txtcontent">
                         <div class="stars">
                             <div class="glyphicon glyphicon-star"></div>
@@ -10,10 +13,9 @@
                             <div class="glyphicon glyphicon-star"></div>
                         </div>
                         <div class="simpletxt">
-                            <h3 class="name">Rolls Royce</h3>
-                            <p>"Lorem ipsum dolor sit amet, consectetur,<br>
-                             sed do eiusmod tempor incididunt" </p>
-                             <h4 class="price"> 1000&euro;</h4>
+                            <h3 class="name">{{ $latest->car }}</h3>
+                            <p>{{ $latest->description }} </p>
+                             <h4 class="price"> {{ $latest->price }}</h4>
                              <button>READ MORE</button><br>
                              <div class="wishtxt">
                                  <p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
@@ -30,7 +32,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
             <div class="txthover">
-                <img src="{{asset('garage/image/car2.jpg')}}" alt="car2">
+                <img src="{{asset($latest->image1)}}" alt="car2">
                     <div class="txtcontent">
                         <div class="stars">
                             <div class="glyphicon glyphicon-star"></div>
@@ -38,10 +40,9 @@
                             <div class="glyphicon glyphicon-star"></div>
                         </div>
                         <div class="simpletxt">
-                            <h3 class="name">Renault</h3>
-                            <p>"Lorem ipsum dolor sit amet, consectetur,<br>
-                             sed do eiusmod tempor incididunt" </p>
-                             <h4 class="price">900 &euro;</h4>
+                            <h3 class="name">{{ $latest->car1 }}</h3>
+                            <p>{{ $latest->description1 }}</p>
+                             <h4 class="price">{{ $latest->price1 }}</h4>
                              <button>READ MORE</button><br>
                              <div class="wishtxt">
                                  <p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
@@ -58,7 +59,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
             <div class="txthover">
-                <img src="{{asset('garage/image/car3.jpg')}}" alt="car3">
+                <img src="{{asset($latest->image2)}}" alt="car3">
                     <div class="txtcontent">
                         <div class="stars">
                             <div class="glyphicon glyphicon-star"></div>
@@ -66,10 +67,9 @@
                             <div class="glyphicon glyphicon-star"></div>
                         </div>
                         <div class="simpletxt">
-                            <h3 class="name">Ford Mustang</h3>
-                            <p>"Lorem ipsum dolor sit amet, consectetur,<br>
-                             sed do eiusmod tempor incididunt" </p>
-                             <h4 class="price">3000 &euro;</h4>
+                            <h3 class="name">{{ $latest->car2}}</h3>
+                            <p>{{ $latest->description2 }}</p>
+                             <h4 class="price">{{ $latest->price2 }}</h4>
                              <button>READ MORE</button><br>
                              <div class="wishtxt">
                                  <p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
@@ -86,7 +86,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
             <div class="txthover">
-                <img src="{{asset('garage/image/car4.jpg')}}" alt="car4">
+                <img src="{{asset($latest->image3)}}" alt="car4">
                     <div class="txtcontent">
                         <div class="stars">
                             <div class="glyphicon glyphicon-star"></div>
@@ -94,10 +94,9 @@
                             <div class="glyphicon glyphicon-star"></div>
                         </div>
                         <div class="simpletxt">
-                            <h3 class="name">Rover</h3>
-                            <p>"Lorem ipsum dolor sit amet, consectetur,<br>
-                             sed do eiusmod tempor incididunt" </p>
-                             <h4 class="price">1000 &euro;</h4>
+                            <h3 class="name">{{ $latest->car3 }}</h3>
+                            <p>{{ $latest->description3 }}</p>
+                             <h4 class="price">{{ $latest->price3 }}</h4>
                              <button>READ MORE</button><br>
                              <div class="wishtxt">
                                  <p class="paragraph1"> Add to Wishlist <span class="glyphicon glyphicon-heart"></span> </p>
@@ -113,7 +112,7 @@
             </div>
         </div>
 
-        
+    @endforeach
     </div>
 </div>
 <!-- _______________________________News Letter ____________________-->

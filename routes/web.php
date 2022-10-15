@@ -46,4 +46,8 @@ Route::post('/feature-update',[FeatureController::class,'update']);
 // letest car
 Route::get('/latest-create',[LatestController::class,'create']);
 Route::post('/latest-store',[LatestController::class,'store']);
-
+Route::get('/latest-index',[LatestController::class,'index']);
+Route::get('/latest-view/{id}',[LatestController::class,'View']);
+Route::get('/latest-edit/{id}',[LatestController::class,'edit']);
+Route::post('/latest-update',[LatestController::class,'update']);
+Route::get('/latest-delete/{id}',[LatestController::class,'delete']);
